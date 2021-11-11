@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Phone Login Form">
+  <title>Phone Login Form</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link href="styles.css" rel="stylesheet" />
+</head>
+
+<body>
+  <section class="info">
+    <section class="ico">
+      <span class="fas fa-signal"></span>
+      <span class="fas fa-wifi"></span>
+      <span class="fas fa-battery-three-quarters"></span>
+    </section>
+    <a href="../Main_Page/index.html" title="go to main page">
+      <div class="logo"></div>
+    </a>
+    <h1>Sign In Below</h1>
+    <p id="success">Log In Successful!</p>
+    <form action="" name="form"  method="POST" onsubmit="return validated()" autocomplete="off">
+
+      <div class="email">
+        <span class="fas fa-envelope-square"></span>
+        <input type="email" required class="email-input" placeholder="Email" name="email" /></div>
+      <div class="password">
+        <span class="fas fa-key"></span>
+        <input type="password" required class="pass-input" placeholder="Password" name="password" />
+        <span class="fas fa-eye-slash" id="togglePassword"></span></div>
+      <p id="password_error">Invalid Email and/or Password!</p>
+      <button id="submit-button" type="submit">Sign In</button>
+
+      <section class="links">
+        <a href="#">Forgot password?</a> OR <a href="../Sign_Up/index.html">Sign Up</a>
+      </section>
+    </form>
+  </section>
+
+  <script src="sign_in.js"></script>
+</body>
+
+</html>

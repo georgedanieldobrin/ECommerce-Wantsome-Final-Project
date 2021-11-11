@@ -1,0 +1,282 @@
+{
+    "items": [{
+            "id": 1,
+            "brand": "Apple",
+            "name": "iPhone 11",
+            "price": 135,
+            "image1": "Pics/apple/1 iPhone 11/1.jpg",
+            "image2": "Pics/apple/1 iPhone 11/2.jpg",
+            "image3": "Pics/apple/1 iPhone 11/3.jpg",
+            "image4": "Pics/apple/1 iPhone 11/4.jpg",
+            "image5": "Pics/apple/1 iPhone 11/5.jpg",
+            "OS": "iOS 15",
+            "Chipset": "Apple A15 Bionic"
+        },
+
+        {
+            "id": 2,
+            "brand": "Samsung",
+            "name": "Galaxy A52s",
+            "price": 140,
+            "image1": "Pics/samsung/1 Galaxy A52s/1.jpg",
+            "image2": "Pics/samsung/1 Galaxy A52s/2.jpg",
+            "image3": "Pics/samsung/1 Galaxy A52s/3.jpg",
+            "image4": "Pics/samsung/1 Galaxy A52s/4.jpg",
+            "image5": "Pics/samsung/1 Galaxy A52s/5.jpg",
+            "OS": "Android 11",
+            "Chipset": "Qualcomm SM7125"
+        },
+        
+        {
+            "id": 3,
+            "brand": "XIAOMI",
+            "name": "Mi 11",
+            "price": 145,
+            "image1": "Pics/xiaomi/1 Mi 11/1.jpg",
+            "image2": "Pics/xiaomi/1 Mi 11/2.jpg",
+            "image3": "Pics/xiaomi/1 Mi 11/3.jpg",
+            "image4": "Pics/xiaomi/1 Mi 11/4.jpg",
+            "image5": "Pics/xiaomi/1 Mi 11/5.jpg",
+            "OS": "MIUI 12",
+            "Chipset": "Qualcomm SM8350"
+        },
+
+        {
+            "id": 4,
+            "brand": "Samsung",
+            "name": "Galaxy Z Flip",
+            "price": 150,
+            "image1": "Pics/samsung/2 Galaxy Z Flip/1.jpg",
+            "image2": "Pics/samsung/2 Galaxy Z Flip/2.jpg",
+            "image3": "Pics/samsung/2 Galaxy Z Flip/3.jpg",
+            "image4": "Pics/samsung/2 Galaxy Z Flip/4.jpg",
+            "image5": "Pics/samsung/2 Galaxy Z Flip/5.jpg",
+            "OS": "Android 11",
+            "Chipset": "Qualcomm SM7125"
+        },
+        
+        {
+            "id": 5,
+            "brand": "Samsung",
+            "name": "Galaxy S21",
+            "price": 155,
+            "image1": "Pics/samsung/3 Galaxy S21/1.jpg",
+            "image2": "Pics/samsung/3 Galaxy S21/2.jpg",
+            "image3": "Pics/samsung/3 Galaxy S21/3.jpg",
+            "image4": "Pics/samsung/3 Galaxy S21/4.jpg",
+            "image5": "Pics/samsung/3 Galaxy S21/5.jpg",
+            "OS": "Android 11",
+            "Chipset": "Qualcomm SM7125"
+        },
+
+        {
+            "id": 6,
+            "brand": "Apple",
+            "name": "iPhone 12",
+            "price": 160,
+            "image1": "Pics/apple/2 iPhone 12/1.jpg",
+            "image2": "Pics/apple/2 iPhone 12/2.jpg",
+            "image3": "Pics/apple/2 iPhone 12/3.jpg",
+            "image4": "Pics/apple/2 iPhone 12/4.jpg",
+            "image5": "Pics/apple/2 iPhone 12/5.jpg",
+            "OS": "iOS 15",
+            "Chipset": "Apple A15 Bionic"
+        },
+        
+        {
+            "id": 7,
+            "brand": "Samsung",
+            "name": "Galaxy Z Fold 2",
+            "price": 165,
+            "image1": "Pics/samsung/4 Galaxy Z Fold 2/1.jpg",
+            "image2": "Pics/samsung/4 Galaxy Z Fold 2/2.jpg",
+            "image3": "Pics/samsung/4 Galaxy Z Fold 2/3.jpg",
+            "image4": "Pics/samsung/4 Galaxy Z Fold 2/4.jpg",
+            "image5": "Pics/samsung/4 Galaxy Z Fold 2/5.jpg",
+            "OS": "Android 11",
+            "Chipset": "Qualcomm SM7125"
+        },
+
+        {
+            "id": 8,
+            "brand": "XIAOMI",
+            "name": "Mi 10T",
+            "price": 170,
+            "image1": "Pics/xiaomi/2 Mi 10T/1.jpg",
+            "image2": "Pics/xiaomi/2 Mi 10T/2.jpg",
+            "image3": "Pics/xiaomi/2 Mi 10T/3.jpg",
+            "image4": "Pics/xiaomi/2 Mi 10T/4.jpg",
+            "image5": "Pics/xiaomi/2 Mi 10T/5.jpg",
+            "OS": "MIUI 12",
+            "Chipset": "Qualcomm SM8350"
+        },
+
+        {
+            "id": 9,
+            "brand": "Apple",
+            "name": "iPhone 13",
+            "price": 175,
+            "image1": "Pics/apple/3 iPhone 13/1.jpg",
+            "image2": "Pics/apple/3 iPhone 13/2.jpg",
+            "image3": "Pics/apple/3 iPhone 13/3.jpg",
+            "image4": "Pics/apple/3 iPhone 13/4.jpg",
+            "image5": "Pics/apple/3 iPhone 13/5.jpg",
+            "OS": "iOS 15",
+            "Chipset": "Apple A15 Bionic"
+        },
+        
+        {
+            "id": 10,
+            "brand": "Samsung",
+            "name": "Galaxy A03s",
+            "price": 180,
+            "image1": "Pics/samsung/5 Galaxy A03s/1.jpg",
+            "image2": "Pics/samsung/5 Galaxy A03s/2.jpg",
+            "image3": "Pics/samsung/5 Galaxy A03s/3.jpg",
+            "image4": "Pics/samsung/5 Galaxy A03s/4.jpg",
+            "image5": "Pics/samsung/5 Galaxy A03s/5.jpg",
+            "OS": "Android 11",
+            "Chipset": "Qualcomm SM7125"
+        },
+
+        {
+            "id": 11,
+            "brand": "XIAOMI",
+            "name": "Poco F3",
+            "price": 185,
+            "image1": "Pics/xiaomi/3 Poco F3/1.jpg",
+            "image2": "Pics/xiaomi/3 Poco F3/2.jpg",
+            "image3": "Pics/xiaomi/3 Poco F3/3.jpg",
+            "image4": "Pics/xiaomi/3 Poco F3/4.jpg",
+            "image5": "Pics/xiaomi/3 Poco F3/5.jpg",
+            "OS": "MIUI 12",
+            "Chipset": "Qualcomm SM8350"
+        },
+
+        {
+            "id": 12,
+            "brand": "Apple",
+            "name": "iPhone 8",
+            "price": 190,
+            "image1": "Pics/apple/4 iPhone 8/1.jpg",
+            "image2": "Pics/apple/4 iPhone 8/2.jpg",
+            "image3": "Pics/apple/4 iPhone 8/3.jpg",
+            "image4": "Pics/apple/4 iPhone 8/4.jpg",
+            "image5": "Pics/apple/4 iPhone 8/5.jpg",
+            "OS": "iOS 15",
+            "Chipset": "Apple A15 Bionic"
+        },
+        
+        {
+            "id": 13,
+            "brand": "Samsung",
+            "name": "Galaxy M12",
+            "price": 195,
+            "image1": "Pics/samsung/6 Galaxy M12/1.jpg",
+            "image2": "Pics/samsung/6 Galaxy M12/2.jpg",
+            "image3": "Pics/samsung/6 Galaxy M12/3.jpg",
+            "image4": "Pics/samsung/6 Galaxy M12/4.jpg",
+            "image5": "Pics/samsung/6 Galaxy M12/5.jpg",
+            "OS": "Android 11",
+            "Chipset": "Qualcomm SM7125"
+        },
+
+        {
+            "id": 14,
+            "brand": "XIAOMI",
+            "name": "Redmi 8A",
+            "price": 200,
+            "image1": "Pics/xiaomi/4 Redmi 8A/1.jpg",
+            "image2": "Pics/xiaomi/4 Redmi 8A/2.jpg",
+            "image3": "Pics/xiaomi/4 Redmi 8A/3.jpg",
+            "image4": "Pics/xiaomi/4 Redmi 8A/4.jpg",
+            "image5": "Pics/xiaomi/4 Redmi 8A/5.jpg",
+            "OS": "MIUI 12",
+            "Chipset": "Qualcomm SM8350"
+        },
+
+        {
+            "id": 15,
+            "brand": "Apple",
+            "name": "iPhone 13 Pro",
+            "price": 205,
+            "image1": "Pics/apple/5 iPhone 13 Pro/1.jpg",
+            "image2": "Pics/apple/5 iPhone 13 Pro/2.jpg",
+            "image3": "Pics/apple/5 iPhone 13 Pro/3.jpg",
+            "image4": "Pics/apple/5 iPhone 13 Pro/4.jpg",
+            "image5": "Pics/apple/5 iPhone 13 Pro/5.jpg",
+            "OS": "iOS 15",
+            "Chipset": "Apple A15 Bionic"
+        },
+        
+        {
+            "id": 16,
+            "brand": "Samsung",
+            "name": "Galaxy A32",
+            "price": 210,
+            "image1": "Pics/samsung/7 Galaxy A32/1.jpg",
+            "image2": "Pics/samsung/7 Galaxy A32/2.jpg",
+            "image3": "Pics/samsung/7 Galaxy A32/3.jpg",
+            "image4": "Pics/samsung/7 Galaxy A32/4.jpg",
+            "image5": "Pics/samsung/7 Galaxy A32/5.jpg",
+            "OS": "Android 11",
+            "Chipset": "Qualcomm SM7125"
+        },
+
+        {
+            "id": 17,
+            "brand": "XIAOMI",
+            "name": "Redmi 9T",
+            "price": 215,
+            "image1": "Pics/xiaomi/5 Redmi 9T/1.jpg",
+            "image2": "Pics/xiaomi/5 Redmi 9T/2.jpg",
+            "image3": "Pics/xiaomi/5 Redmi 9T/3.jpg",
+            "image4": "Pics/xiaomi/5 Redmi 9T/4.jpg",
+            "image5": "Pics/xiaomi/5 Redmi 9T/5.jpg",
+            "OS": "MIUI 12",
+            "Chipset": "Qualcomm SM8350"
+        },
+
+        {
+            "id": 18,
+            "brand": "Apple",
+            "name": "iPhone 12 Mini",
+            "price": 220,
+            "image1": "Pics/apple/6 iPhone 12 Mini/1.jpg",
+            "image2": "Pics/apple/6 iPhone 12 Mini/2.jpg",
+            "image3": "Pics/apple/6 iPhone 12 Mini/3.jpg",
+            "image4": "Pics/apple/6 iPhone 12 Mini/4.jpg",
+            "image5": "Pics/apple/6 iPhone 12 Mini/5.jpg",
+            "OS": "iOS 15",
+            "Chipset": "Apple A15 Bionic"
+        },
+        
+        {
+            "id": 19,
+            "brand": "Samsung",
+            "name": "Galaxy M62",
+            "price": 225,
+            "image1": "Pics/samsung/8 Galaxy M62/1.jpg",
+            "image2": "Pics/samsung/8 Galaxy M62/2.jpg",
+            "image3": "Pics/samsung/8 Galaxy M62/3.jpg",
+            "image4": "Pics/samsung/8 Galaxy M62/4.jpg",
+            "image5": "Pics/samsung/8 Galaxy M62/5.jpg",
+            "OS": "Android 11",
+            "Chipset": "Qualcomm SM7125"
+        },
+
+        {
+            "id": 20,
+            "brand": "XIAOMI",
+            "name": "Redmi K40",
+            "price": 230,
+            "image1": "Pics/xiaomi/6 Redmi K40/1.jpg",
+            "image2": "Pics/xiaomi/6 Redmi K40/2.jpg",
+            "image3": "Pics/xiaomi/6 Redmi K40/3.jpg",
+            "image4": "Pics/xiaomi/6 Redmi K40/4.jpg",
+            "image5": "Pics/xiaomi/6 Redmi K40/5.jpg",
+            "OS": "MIUI 12",
+            "Chipset": "Qualcomm SM8350"
+        }
+    ]
+}

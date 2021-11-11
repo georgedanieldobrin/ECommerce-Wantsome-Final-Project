@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Phone Sign Up Form">
+  <title>Phone Sign Up Form</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link href="styles.css" rel="stylesheet" />
+
+</head>
+
+<body>
+  <section class="info">
+    <section class="ico">
+      <span class="fas fa-signal"></span>
+      <span class="fas fa-wifi"></span>
+      <span class="fas fa-battery-three-quarters"></span>
+    </section>
+    <a href="../Main_Page/index.html" title="go to main page">
+      <div class="logo"></div>
+    </a>
+    <h1>Sign Up Below</h1>
+    <form action="" method="POST" name="form" autocomplete="off" onsubmit="return validateForm()">
+
+      <label>First Name</label>
+      <div class="box">
+        <input type="text" name="name" id="name" title="first name">
+      </div>
+      <div class="error" id="nameErr"></div>
+
+      <label>Last Name</label>
+      <div class="box">
+        <input type="text" name="lastName" id="lastName" title="last name">
+      </div>
+      <div class="error" id="lastNameErr"></div>
+
+
+      <label>Email Address</label>
+      <div class="box">
+        <input type="email" name="email" id="email" title="email">
+      </div>
+      <div class="error" id="emailErr"> </div>
+
+      <label>Password</label>
+      <div class="box">
+        <input type="password" name="password" id="password1" title="password">
+        <span class="fas fa-eye-slash" id="togglePassword1"></span>
+      </div>
+      <div class="error" id="passwordErr"></div>
+
+      <label>Confirm Password</label>
+      <div class="box">
+        <input type="password" name="confirmPassword" id="password2" title="confirm password">
+        <span class="fas fa-eye-slash" id="togglePassword2"></span>
+      </div>
+      <div class="error" id="confirmPasswordErr"></div>
+      <p id="success">Sign Up Successful!</p>
+
+      <button type="submit" id="submit-button">Sign Up</button>
+      <section class="links">
+        <a href="../Sign_In/index.html">Already have an account? Sign in!</a>
+      </section>
+    </form>
+  </section>
+  <script src="sign_up.js"></script>
+</body>
+
+</html>

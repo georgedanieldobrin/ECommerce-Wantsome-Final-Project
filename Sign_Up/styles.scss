@@ -1,0 +1,152 @@
+@import 'reset';
+@import 'variables';
+@import 'typography';
+
+body {
+    background-color: $bkg-clr;
+    font-weight: 600;
+    color: $main-clr;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.info {
+    width: 430px;
+    height: 950px;
+    padding: 30px 35px 35px 35px;
+    border-radius: 40px;
+    background-color: $bkg-clr;
+    box-shadow: 13px 13px 20px #cbced1, -13px -13px 20px $color-white;
+    margin: auto auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    .ico {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding-bottom: 30px;
+    }
+
+    .logo {
+        background: url(..//Pics/logo1.jpg);
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin: 0 auto;
+        box-shadow: 0px 0px 2px #5f5f5f, 0px 0px 0px 5px $color-white, 8px 8px 15px #a7aaaf, -8px -8px 15px #fff;
+
+    }
+
+    h1 {
+        text-align: center;
+        margin-top: 24px;
+        letter-spacing: .5px;
+    }
+}
+
+
+form {
+    width: 100%;
+    padding: 0px 15px 5px 5px;
+    margin-top: 30px;
+
+    p {
+        color: green;
+        text-align: center;
+        visibility: hidden;
+    }
+
+    label {
+        margin-left: 15px;
+    }
+
+    input {
+        height: 100%;
+        width: 100%;
+        border: none;
+        outline: none;
+        background: none;
+        font-size: $base-font-size;
+        color: $main-clr;
+        padding: 8px 4px 8px 3px;
+
+        &:disabled {
+            cursor: not-allowed;
+        }
+    }
+
+    .box {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        border-radius: 25px;
+        box-shadow: inset 2px 2px 5px #BABECC, inset -5px -5px 10px #ffffff73;
+    }
+
+    span {
+        margin-top: 10px;
+        margin-left: 5px;
+        position: absolute;
+        cursor: pointer;
+    }
+
+    .error {
+        font-size: 90%;
+        height: 17px;
+        margin-bottom: 15px;
+        color: red;
+    }
+
+    button {
+        margin-top: 15px;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        height: 60px;
+        border-radius: 30px;
+        font-size: 20px;
+        text-align: center;
+        background-color: $main-clr;
+        color: $color-white;
+        text-transform: uppercase;
+        box-shadow: inset 2px 2px 5px #BABECC, inset -5px -5px 10px #ffffff73;
+        transition: all .5s;
+
+        &:hover {
+            background-color: lightgray;
+            color: $main-clr;
+        }
+
+        &:disabled {
+            background-color: lightgray;
+            color: $main-clr;
+            cursor: not-allowed;
+        }
+    }
+
+    .links {
+        margin-top: 25px;
+        text-align: center;
+        color: black;
+
+
+        a {
+            color: $main-clr;
+        }
+    }
+
+    .input-1 {
+        background-image: url(../Pics/check.png);
+        background-repeat: no-repeat;
+        background-position: right 10px center;
+    }
+
+    .input-2 {
+        background-image: url(../Pics/cancel.png);
+        background-repeat: no-repeat;
+        background-position: right 10px center;
+    }
+}

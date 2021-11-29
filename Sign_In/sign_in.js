@@ -87,8 +87,6 @@ function pass_Verify() {
 }
 
 
-// password
-
 const togglePassword = document.querySelector('#togglePassword');
 
 togglePassword.addEventListener('click', function (e) {

@@ -156,7 +156,7 @@ function validateForm() {
 }
 
 
-// password
+
 
 const password1 = document.getElementById('password1');
 const password2 = document.getElementById('password2');
@@ -176,5 +176,3 @@ togglePassword2.addEventListener('click', function (e) {
     this.classList.toggle('fa-eye');
 });
 
-
-// localStorage

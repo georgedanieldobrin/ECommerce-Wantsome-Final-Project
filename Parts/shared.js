@@ -31,15 +31,7 @@ function createProduct(product, queryName) {
 
 }
 
-//   let optionSamsung = document.querySelector('select');
-// console.log(optionSamsung);
-// optionSamsung.addEventListener ('change', function()  {
-//     console.log(this.value);
-// }, false);
-// function openProduct(event) {
-//     const productid = event.target.getAttribute('productid');
-//     window.open(`/Product_Details/index.html?id=${productid}`);
-// }
+
 
 function addToWishList(productId) {
   let wishlist = [];
@@ -76,7 +68,6 @@ function addToCart(productId) {
 }
 
 function handleClick(event) {
-  console.log(event);
   let productId;
   event.path.forEach(element => {
     if (element.classList) {
@@ -105,13 +96,8 @@ function handleClick(event) {
 }
 
 
-//
-//
-//
-//MAPARE PRODUSE INDIVIDUALE START//
 
 function createProductDetails(currentItm, queryName) {
-  //document.getElementById('img-sld').style.backgroundImage=`url('../${currentItm.image1}')`;
   const container = document.querySelector(queryName);
   container.innerHTML = `
   <div class="image-slider" id="img-sld">
@@ -235,84 +221,4 @@ function createProductDetails(currentItm, queryName) {
     addToWishList(JSON.stringify(currentItm.id));
   });
 
-  
-    
-
 }
-
-
-  
-
-// MAPARE PRODUSE INDIVIDUALE END//
-
-
-//mapare wishlist start//
-
-
-function createProductWish(product, queryName) {
-  const container = document.querySelector(queryName);
-  let grid = document.createElement("div");
-  grid.classList.add("img-box");
-  const child = container.appendChild(grid);
-  child.innerHTML = `
-     <div class=img-and-text>
-        <img src="../${product.image1}" class="img-product" alt="img1" />
-          <div class="text">
-            <p class="product-brand">${product.brand}</p>
-            <p class="product-name">${product.name}</p>
-          </div>
-      </div>
-      <p class="product-price">$${product.price}</p>
-      <button class="delete-btn"><img src="../Pics/cancel.png" alt="close"></button>
-    </div>
-    `
-  child.setAttribute("productid", product.id);
-  // child.addEventListener('click', handleClick);
-
-
-  // let delBtn = document.querySelectorAll('.delete-btn');
-  // for (let deleteBtn of delBtn) {
-  //   deleteBtn.addEventListener("click", function (e) {
-  //     e.stopPropagation();
-  //     if (product.id == 6){
-  //     let key = JSON.stringify(product.id);
-  //     console.log(JSON.parse(key));
-  //     delete JSON.parse(key);}
-  //   });
-  // }
-
-   
-}
-
-//mapare wishlist end//
-
-
-//mapare cart start//
-
-
-function createProductCart(product, queryName) {
-  const container = document.querySelector(queryName);
-  let grid = document.createElement("div");
-  grid.classList.add("img-box");
-  const child = container.appendChild(grid);
-  child.innerHTML = `
-      <div class=img-and-text>
-      <img src="../${product.image1}" class="img-product" alt="img1" />
-        <div class="text">
-           <p class="product-brand">${product.brand}</p>
-           <p class="product-name">${product.name}</p>
-        </div>
-      </div>
-      <div class="item-counter">
-        <button class="counter-btn decrement">-</button>
-        <p class="item-count">1</p>
-        <button class="counter-btn increment">+</button>
-      </div>
-      <p class="product-price">$${product.price}</p>
-      <button class="delete-btn"><img src="../Pics/cancel.png" alt="close"></button>
-      </div>
-    `
-  child.setAttribute("productid", product.id);
-}
-
-//mapare cart end//

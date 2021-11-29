@@ -6,24 +6,20 @@ fetch("../products.json")
     })
     .then(data => {
         products = data.items;
-        insertProducts();
+        products.forEach(product => {
+            createProduct(product, '#productlist .item-grid');
+        })
     });
 
-function insertProducts() {
-    products.forEach(product => {
-        createProduct(product, '#productlist .item-grid');
-    })
-}
+let sortType = 'default';
+let sortBrand = 'default';
 
 
-////////////filtrare dupa brand start
-
-let option = document.querySelector('select');
+const option = document.querySelector('.brand-sort');
 option.addEventListener('change', function () {
-    if (this.value == "Samsung") {
-
-        let products = [];
-
+        sortBrand = this.value;
+        if (this.value == "Samsung") {
+        products = [];
         fetch("../products.json")
             .then(response => {
                 return response.json();
@@ -32,23 +28,13 @@ option.addEventListener('change', function () {
                 for (let i = 0; i < 20; i++) {
                     if (data.items[i].brand == "Samsung") {
                         products.push(data.items[i]);
-
                     }
                 }
-                insertProducts();
+                
+                addProducts();
             });
-
-        function insertProducts() {
-            products.forEach(product => {
-                createProduct(product, '#productlist .item-grid');
-            })
-        }
-    }
-
-    if (this.value == "Apple") {
-
-        let products = [];
-
+    } else if (this.value == "Apple") {
+        products = [];
         fetch("../products.json")
             .then(response => {
                 return response.json();
@@ -60,20 +46,10 @@ option.addEventListener('change', function () {
 
                     }
                 }
-                insertProducts();
+                addProducts();
             });
-
-        function insertProducts() {
-            products.forEach(product => {
-                createProduct(product, '#productlist .item-grid');
-            })
-        }
-    }
-
-    if (this.value == "XIAOMI") {
-
-        let products = [];
-
+    } else if (this.value == "XIAOMI") {
+        products = [];
         fetch("../products.json")
             .then(response => {
                 return response.json();
@@ -82,35 +58,64 @@ option.addEventListener('change', function () {
                 for (let i = 0; i < 20; i++) {
                     if (data.items[i].brand == "XIAOMI") {
                         products.push(data.items[i]);
-
                     }
                 }
-                insertProducts();
+                addProducts();
             });
-
-        function insertProducts() {
-            products.forEach(product => {
-                createProduct(product, '#productlist .item-grid');
-            })
-        }
-    }
-
-    if (this.value == "All products") {
-        let products = [];
-
+    } else if (this.value == "all") {
+        products = [];
         fetch("../products.json")
             .then(response => {
                 return response.json();
             })
             .then(data => {
                 products = data.items;
-                insertProducts();
+                addProducts();
             });
-
-        function insertProducts() {
-            products.forEach(product => {
-                createProduct(product, '#productlist .item-grid');
-            })
-        }
     }
 }, false);
+
+
+
+const priceSort = document.querySelector('.price-sort');
+priceSort.addEventListener('change', function () {
+    sortType = this.value;
+    addProducts();
+}, false);
+
+function addProducts() {
+    const currentItems = document.querySelectorAll('.item');
+    currentItems.forEach(item => {
+        item.parentNode.removeChild(item);
+    })
+    if(sortType === 'default') {
+        products = [];
+        fetch("../products.json")
+            .then(response => {
+                return response.json();
+            })
+            .then(data => {
+                for (let i = 0; i < 20; i++) {
+                    console.log(data.items[i].brand == sortBrand);
+                    if (sortBrand !== 'all' && data.items[i].brand == sortBrand) {
+                        products.push(data.items[i]);
+                    } else if(sortBrand === 'all') {
+                        products.push(data.items[i]);
+                    }
+                }
+                products.forEach(product => {
+                    createProduct(product, '#productlist .item-grid');
+                })
+            });
+    } else if(sortType === 'low') {
+        products.sort(function(a, b){return a.price - b.price})
+        products.forEach(product => {
+            createProduct(product, '#productlist .item-grid');
+        })
+    } else if(sortType === 'high') {
+        products.sort(function(a, b){return b.price - a.price})
+        products.forEach(product => {
+            createProduct(product, '#productlist .item-grid');
+        })
+    }
+}

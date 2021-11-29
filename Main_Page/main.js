@@ -32,9 +32,6 @@ function createArrivals() {
     })
 }
 
-// nxtBtn.addEventListener("click", () => {
-//     console.log("da");}
-// )
 
 var sectionIndex = 0;
 
@@ -48,18 +45,3 @@ nxtBtn.addEventListener('click', function () {
     homeContainers.style.transform = 'translate(' + (sectionIndex) * -33.33 + '%)';
 });
 
-
-
-// homeContainers.forEach((item, i) => {
-//     let containerDimensions = item.getBoundingClientRect();
-//     let containerWidth = containerDimensions.width;
-
-//     nxtBtn[i].addEventListener('click', () => {
-//         item.scrollLeft +=containerWidth;
-//     })
-
-//     preBtn[i].addEventListener('click', () => {
-//         item.scrollLeft -=containerWidth;
-//     })
-
-// })
